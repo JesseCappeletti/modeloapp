@@ -45,8 +45,12 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'core.apps.CoreConfig',
     'categories.apps.CategoriesConfig',
+    'products.apps.ProductsConfig',
+    'socialnetworks.apps.SocialnetworksConfig',
+    'persons.apps.PersonsConfig',
     'rest_framework',
 ]
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
