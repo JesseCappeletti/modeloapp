@@ -5,3 +5,5 @@
 /apps/categories/migrations/*
 /apps/products/__pycache__/*
 /apps/products/migrations/*
+/apps/invoices/__pycache__/*
+/apps/invoices/migrations/*
