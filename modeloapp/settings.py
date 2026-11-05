@@ -98,6 +98,13 @@ WSGI_APPLICATION = 'modeloapp.wsgi.application'
 #     }
 # }
 
+tns_admin = Path(os.getenv("TNS_ADMIN", "Wallet_modeloappdb"))
+
+if not tns_admin.is_absolute():
+    tns_admin = (BASE_DIR / tns_admin).resolve()
+
+os.environ["TNS_ADMIN"] = str(tns_admin)
+
 DATABASES= {     
     'default': {         
         'ENGINE': 'django.db.backends.oracle',         
